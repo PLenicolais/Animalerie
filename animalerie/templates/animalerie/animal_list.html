@@ -1,0 +1,11 @@
+{% extends 'animalerie/base.html' %}
+
+{% block content %}
+    {% for animal in animals %}
+        <div class="animal">
+            <h2><a href="{% url 'animal_detail' id_animal=animal.id_animal %}">{{ animal.id_animal }}</a></h2>
+            <p>{{ animal.etat }}</p>
+            <p>{{ animal.lieu }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}

@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from .forms import MoveForm
+from django.contrib import messages
 from .models import Animal, Equipement
 
 # Create your views here.
